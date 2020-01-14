@@ -1,21 +1,26 @@
 import React from 'react';
 import Post from './Post';
 
+import { Tag } from './styles';
+
+import { Bd } from './styles';
+
+import { Title } from './styles';
 
 export default class App extends React.Component {
   render() {
     return(
-      <div>
-      <h2> E vamos de app de novo</h2>
-      <Post title = "Post 1"/>
+      <Bd>
+      <Title> E vamos de app de novo</Title>
+      <Tag><Post title = "Post 1"/></Tag>
       
-      <Post title = "Post 2"/>
+      <Tag><Post title = "Post 2"/></Tag>
       
-      <Post title = "Post 3"/>
+      <Tag><Post title = "Post 3"/></Tag>
       
-      <Post title = "Post 4"/>
+      <Tag><Post title = "Post 4"/></Tag>
       
-      </div>
+      </Bd>
     )
   }
 }
